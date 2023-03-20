@@ -1,19 +1,55 @@
-<mxfile host="app.diagrams.net" modified="2023-03-20T06:11:38.506Z" agent="5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/110.0.0.0 Safari/537.36" etag="VaU-HmBs07CiIKO_tvGD" version="21.0.8" type="github">
+<mxfile host="app.diagrams.net" modified="2023-03-20T06:15:53.664Z" agent="5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/110.0.0.0 Safari/537.36" etag="PFa6hmhhe6KftfLc8_UL" version="21.0.8" type="github">
   <diagram name="Page-1" id="2YBvvXClWsGukQMizWep">
-    <mxGraphModel dx="578" dy="340" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
+    <mxGraphModel dx="830" dy="488" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
-        <mxCell id="ZIVcY5cDC0XMZdspyGfl-2" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="ZIVcY5cDC0XMZdspyGfl-1" target="ZIVcY5cDC0XMZdspyGfl-3">
+        <mxCell id="ZIVcY5cDC0XMZdspyGfl-2" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" parent="1" source="ZIVcY5cDC0XMZdspyGfl-1" target="ZIVcY5cDC0XMZdspyGfl-3" edge="1">
           <mxGeometry relative="1" as="geometry">
             <mxPoint x="359.9999999999999" y="240" as="targetPoint" />
           </mxGeometry>
         </mxCell>
-        <mxCell id="ZIVcY5cDC0XMZdspyGfl-1" value="클라이언트" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+        <mxCell id="ZIVcY5cDC0XMZdspyGfl-1" value="클라이언트" style="rounded=0;whiteSpace=wrap;html=1;" parent="1" vertex="1">
           <mxGeometry x="80" y="210" width="120" height="60" as="geometry" />
         </mxCell>
-        <mxCell id="ZIVcY5cDC0XMZdspyGfl-3" value="회원 서비스&lt;br&gt;&lt;font style=&quot;font-size: 8px;&quot;&gt;1. 회원가입&lt;br style=&quot;font-size: 8px;&quot;&gt;2. 회원 조회&lt;br style=&quot;font-size: 8px;&quot;&gt;3. 회원 탈퇴&lt;/font&gt;" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+        <mxCell id="NSFVatNlDf2FGKIE8o8W-1" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="ZIVcY5cDC0XMZdspyGfl-3" target="NSFVatNlDf2FGKIE8o8W-2">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="560" y="240" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="ZIVcY5cDC0XMZdspyGfl-3" value="회원 서비스&lt;br&gt;&lt;font style=&quot;font-size: 8px;&quot;&gt;1. 회원가입&lt;br style=&quot;font-size: 8px;&quot;&gt;2. 회원 조회&lt;br style=&quot;font-size: 8px;&quot;&gt;3. 회원 탈퇴&lt;/font&gt;" style="rounded=0;whiteSpace=wrap;html=1;" parent="1" vertex="1">
           <mxGeometry x="319.9999999999999" y="210" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="NSFVatNlDf2FGKIE8o8W-2" value="회원 저장소" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="560" y="210" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="NSFVatNlDf2FGKIE8o8W-8" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=1;entryDx=0;entryDy=0;" edge="1" parent="1" source="NSFVatNlDf2FGKIE8o8W-7" target="NSFVatNlDf2FGKIE8o8W-2">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="NSFVatNlDf2FGKIE8o8W-7" value="MariaDB&lt;br&gt;회원 저장소" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="560" y="360" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="NSFVatNlDf2FGKIE8o8W-10" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.25;entryY=1;entryDx=0;entryDy=0;" edge="1" parent="1" source="NSFVatNlDf2FGKIE8o8W-9" target="NSFVatNlDf2FGKIE8o8W-2">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="470" y="340" />
+              <mxPoint x="590" y="340" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="NSFVatNlDf2FGKIE8o8W-9" value="메모리&lt;br&gt;회원 저장소" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="410" y="360" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="NSFVatNlDf2FGKIE8o8W-12" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.75;entryY=1;entryDx=0;entryDy=0;" edge="1" parent="1" source="NSFVatNlDf2FGKIE8o8W-11" target="NSFVatNlDf2FGKIE8o8W-2">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="780" y="340" />
+              <mxPoint x="650" y="340" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="NSFVatNlDf2FGKIE8o8W-11" value="H2&lt;br&gt;회원 저장소" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="720" y="360" width="120" height="60" as="geometry" />
         </mxCell>
       </root>
     </mxGraphModel>
