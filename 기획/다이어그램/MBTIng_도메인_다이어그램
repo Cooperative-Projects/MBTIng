@@ -1,6 +1,6 @@
-<mxfile host="app.diagrams.net" modified="2023-03-20T15:20:51.002Z" agent="5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/111.0.0.0 Safari/537.36" etag="k0x1E89H6oGnO-nx2mhB" version="21.0.8" type="github">
+<mxfile host="app.diagrams.net" modified="2023-03-21T02:27:59.878Z" agent="5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/111.0.0.0 Safari/537.36" etag="uigMb8lqKkB8v8mJz83e" version="21.0.8" type="github">
   <diagram name="Page-1" id="2YBvvXClWsGukQMizWep">
-    <mxGraphModel dx="885" dy="801" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
+    <mxGraphModel dx="794" dy="438" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
@@ -51,14 +51,17 @@
         <mxCell id="NSFVatNlDf2FGKIE8o8W-11" value="H2&lt;br&gt;회원 저장소" style="rounded=0;whiteSpace=wrap;html=1;" parent="1" vertex="1">
           <mxGeometry x="680" y="180" width="120" height="60" as="geometry" />
         </mxCell>
-        <mxCell id="iELdccMJxd2vx85kV0G8-3" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="iELdccMJxd2vx85kV0G8-1" target="iELdccMJxd2vx85kV0G8-2">
+        <mxCell id="iELdccMJxd2vx85kV0G8-3" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" parent="1" source="iELdccMJxd2vx85kV0G8-1" target="iELdccMJxd2vx85kV0G8-2" edge="1">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
-        <mxCell id="iELdccMJxd2vx85kV0G8-1" value="클라이언트" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+        <mxCell id="iELdccMJxd2vx85kV0G8-1" value="클라이언트" style="rounded=0;whiteSpace=wrap;html=1;" parent="1" vertex="1">
           <mxGeometry x="40" y="310" width="80" height="60" as="geometry" />
         </mxCell>
-        <mxCell id="iELdccMJxd2vx85kV0G8-2" value="매칭 서비스" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+        <mxCell id="iELdccMJxd2vx85kV0G8-2" value="매칭 서비스" style="rounded=0;whiteSpace=wrap;html=1;" parent="1" vertex="1">
           <mxGeometry x="200" y="310" width="80" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="MWZgkq0ESLownvekm8od-1" value="" style="whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="90" y="90" width="120" height="60" as="geometry" />
         </mxCell>
       </root>
     </mxGraphModel>
