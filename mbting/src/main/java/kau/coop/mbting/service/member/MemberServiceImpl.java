@@ -18,21 +18,21 @@ public class MemberServiceImpl implements MemberService {
 
     @Override
     public void join(Member member) {
-
+        memberRepository.save(member);
     }
 
     @Override
     public Optional<Member> findOne(Long memberId) {
-        return Optional.empty();
+        return memberRepository.findById(memberId);
     }
 
     @Override
     public List<Member> findAll() {
-        return null;
+        return memberRepository.findAll();
     }
 
     @Override
-    public void quit(Member member) {
-
+    public void quit(Long memberId) {
+        memberRepository.delete(memberId);
     }
 }

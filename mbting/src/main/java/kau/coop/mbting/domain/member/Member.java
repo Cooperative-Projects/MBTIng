@@ -1,23 +1,26 @@
 package kau.coop.mbting.domain.member;
 
+import lombok.Getter;
+
 // 범위 지정이 가능한 mbti, gender, address 등은 최대한 enum class를 이용하였습니다.
+@Getter
 public class Member {
 
     /**
      * 고유 ID로 회원 조회할 때 사용합니다.
      */
-    public Long id;
-    public String nickname;
-    public Gender gender;
-    public Long age;
-    public Academy academy;
-    public Mbti mbti;
-    public Address address;
+    private Long id;
+    private String nickname;
+    private Gender gender;
+    private Long age;
+    private Academy academy;
+    private Mbti mbti;
+    private Address address;
+    private Hobby hobby;
 
-    public Hobby hobby;
 
-    public Member(Long id, String nickname, Gender gender, Long age, Academy academy, Mbti mbti, Address address, Hobby hobby) {
-        this.id = id;
+
+    public Member(String nickname, Gender gender, Long age, Academy academy, Mbti mbti, Address address, Hobby hobby) {
         this.nickname = nickname;
         this.gender = gender;
         this.age = age;
@@ -25,5 +28,9 @@ public class Member {
         this.mbti = mbti;
         this.address = address;
         this.hobby = hobby;
+    }
+
+    public void setId(Long id) {
+        this.id = id;
     }
 }
