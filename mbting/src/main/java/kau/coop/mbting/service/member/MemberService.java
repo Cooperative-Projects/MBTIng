@@ -29,9 +29,9 @@ public interface MemberService {
 
     /**
      * 회원 탈퇴
-     * @param member
+     * @param memberId
      */
-    void quit(Member member);
+    void quit(Long memberId);
 
 
 }
