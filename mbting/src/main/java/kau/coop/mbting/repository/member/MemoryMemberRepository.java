@@ -4,18 +4,25 @@ import kau.coop.mbting.domain.member.Member;
 import org.springframework.stereotype.Component;
 
 import java.util.*;
+import java.util.concurrent.ConcurrentHashMap;
 
 @Component
 public class MemoryMemberRepository implements MemberRepository {
 
-    private static Map<Long, Member> store = new HashMap<>();
+    private static Map<Long, Member> store = new ConcurrentHashMap<>();
 
     private static long sequence = 0L;
 
     @Override
     public Member save(Member member) {
-        member.setId(sequence++);
-        store.put(member.getId(), member);
+        member.setIdentityId(sequence++);
+        store.put(member.getIdentityId(), member);
+        return member;
+    }
+
+    @Override
+    public Member update(Member member) {
+        store.put(member.getIdentityId(), member);
         return member;
     }
 
@@ -26,9 +33,16 @@ public class MemoryMemberRepository implements MemberRepository {
     }
 
     @Override
+    public Optional<Member> findById(String userId) {
+        return store.values().stream()
+                .filter( member -> member.getId().equals(userId))
+                .findAny();
+    }
+
+    @Override
     public Optional<Member> findByNickname(String nickname) {
          return store.values().stream()
-                .filter( member -> member.getNickname().equals(nickname))
+                .filter( member -> member.getMemberInfo().getNickname().equals(nickname))
                 .findAny();
     }
 
