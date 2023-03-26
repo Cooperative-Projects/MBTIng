@@ -1,4 +1,4 @@
-package kau.coop.mbting.domain.member;
+package kau.coop.mbting.domain.member.memberinfo;
 
 public enum Mbti {
     ISTJ,
